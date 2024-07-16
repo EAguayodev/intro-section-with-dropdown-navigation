@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- header start -->
+  <header>
+    <!-- nav start -->
+    <nav class="navbar">
+      <a href="index.html">
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </a>
+      <img class="icon-menu__open" id="menu-toggle__open" src="images/icon-menu.svg" alt="icon menu">
+      <img class="icon-menu__close" id="menu-toggle__close" src="images/icon-close-menu.svg" alt="icon menu">
+      <div>
+        <!-- nav ul | menu mobile start -->
+        <ul class="menu mobile-menu">
+          <li>
+            <a href="#">Features <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow"></a>
+            <!-- dropdown 1 start -->
+            <ul class="dropdown-box">
+              <li class="">
+                <img class="icon icon-todo" src="images/icon-todo.svg" alt="icon todo">
+                <a href="#">
+                  Todo List
+                </a>
+              </li>
+              <li>
+                <img class="icon icon-calender" src="images/icon-calendar.svg" alt="icon calender">
+                <a href="#">
+                  Calender
+                </a>
+              </li>
+              <li>
+                <img class="icon icon-reminder" src="images/icon-reminders.svg" alt="icon reminders">
+                <a href="#">
+                  Reminders
+                </a>
+              </li>
+              <li>
+                <img class="icon icon-planning" src="images/icon-planning.svg" alt="planning icon">
+                <a href="#">
+                  Planning
+                </a>
+              </li>
+            </ul>
+            <!-- dropdown 1 end -->
+          </li>
+          <li>
+            <a href="#">
+              Company
+              <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow">
+            </a>
+            <!-- dropdown 2 start -->
+            <ul class="dropdown-box drop-2">
+              <li>
+                <a href="#">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Blog
+                </a>
+              </li>
+            </ul>
+            <!-- dropdown 2 end -->
+          </li>
+          <li>
+            <a href="#">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="#" class="btn-login">Login</a>
+        <a href="#" class="btn-register">Register</a>
+      </div>
+      <!-- nav ul | menu mobile start -->
+    </nav>
+    <!-- nav end -->
+  </header>
+  <!-- header end -->
+<!-- container start -->
+  <div class="container">
+    <!-- row start -->
+    <div class="row">
+      <div>
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline
+          processes,
+          create team rituals, and watch productivity soar.</p>
+        <button class="btn-learn">Learn
+          more</button>
+        <div class="sponsors-box">
+
+          <img src="images/client-databiz.svg" alt="client databiz">
+          <img src="images/client-audiophile.svg" alt="client audiophile">
+
+
+          <img src="images/client-meet.svg" alt="client meet">
+
+
+          <img src="images/client-maker.svg" alt="client maker">
+
+        </div>
+      </div>
+      <div>
+        <picture>
+          <source media="(max-width: 900px)" srcset="images/image-hero-desktop.png">
+          <source media="(max-width: 500px)" srcset="images/image-hero-mobile.png">
+          <img class="hero-image" src="images/image-hero-desktop.png" alt="hero image">
+        </picture>
+      </div>
+    </div>
+    <!-- row end -->
+  </div>
+  <!-- container end -->
+  <script src="js/main.js"></script>
+</body>
+</html>
