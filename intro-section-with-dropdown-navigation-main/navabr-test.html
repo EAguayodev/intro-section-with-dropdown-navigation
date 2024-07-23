@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar-test.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="index.html">
+        <img class="logo" src="images/logo.svg" alt="logo">
+    </a>
+    <img class="icon-menu__open" id="menu-toggle__open" src="images/icon-menu.svg" alt="icon menu">
+    <img class="icon-menu__close" id="menu-toggle__close" src="images/icon-close-menu.svg" alt="icon menu">
+    <div class="menu-container">
+        <ul class="menu mobile-menu" id="mobile-menu">
+            <li>
+                <a href="#">Features <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow"></a>
+                <!-- dropdown 1 start -->
+                <ul class="dropdown-box">
+                    <li>
+                        <img class="icon icon-todo" src="images/icon-todo.svg" alt="icon todo">
+                        <a href="#">Todo List</a>
+                    </li>
+                    <li>
+                        <img class="icon icon-calendar" src="images/icon-calendar.svg" alt="icon calendar">
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li>
+                        <img class="icon icon-reminders" src="images/icon-reminders.svg" alt="icon reminders">
+                        <a href="#">Reminders</a>
+                    </li>
+                    <li>
+                        <img class="icon icon-planning" src="images/icon-planning.svg" alt="planning icon">
+                        <a href="#">Planning</a>
+                    </li>
+                </ul>
+                <!-- dropdown 1 end -->
+            </li>
+            <li>
+                <a href="#">Company <img class="arrow-icon" src="images/icon-arrow-down.svg" alt="icon arrow"></a>
+                <!-- dropdown 2 start -->
+                <ul class="dropdown-box drop-2">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <!-- dropdown 2 end -->
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-register">Register</a>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
