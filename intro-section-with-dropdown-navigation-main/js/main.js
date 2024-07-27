@@ -1,3 +1,19 @@
-const iconOpen = document.getElementById('menu-toggle__open');
+const hamburger = document.getElementById("menu-toggle__open");
+const menuMobile = document.getElementById('mobile-menu');
 const iconClose = document.getElementById("menu-toggle__close");
-const menuBox = document.getElementById('mobile-menu');
+
+hamburger.addEventListener("click", function () {
+  if (menuMobile) {
+    document.getElementById("mobile-menu").style.display = "block";
+  } else {
+    document.getElementById("mobile-menu").style.display = "none";
+  }
+});
+
+iconClose.addEventListener("click", function () {
+  if (menuMobile) {
+    document.getElementById("mobile-menu").style.display = "none";
+  } else {
+    document.getElementById("mobile-menu").style.display = "block";
+  }
+});
